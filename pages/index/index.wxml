@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}"wx:key="keys">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <scroll-view>
+    <view bindtap="touchOnGoods" wx:key="keys" class="goods" hover-class="goods_hover" wx:for="{{goods_list}}">
+      <image src="../../images/product_x8.png" mode="widthFix"></image>
+    </view>
+  </scroll-view>
+
+  <view class="{{needAni ? 'bus scale': 'bus'}}">
+    <image src="../../images/bus.png"></image>
+    <view class="count" hidden="{{hideCount}}">{{count}}</view>
+  </view>
+
+  <view class="good_box" hidden="{{hide_good_box}}"  style="left: {{bus_x}}px; top: {{bus_y}}px;">
+    <image src="../../images/product_x8.png"></image>
+  </view>
+</view>

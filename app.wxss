@@ -1,0 +1,8 @@
+/**app.wxss**/
+page {
+  height: 100%
+}
+.container {
+  background: #ddd;
+  font-family: '微软雅黑', Arial, sans-serif;
+} 

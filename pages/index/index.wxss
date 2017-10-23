@@ -1,0 +1,90 @@
+/**index.wxss**/
+
+swiper {
+  height: 168px;
+}
+
+.slide-image {
+  width: 100%;
+  height: 168px;
+}
+
+scroll-view {
+  margin-top: 5px;
+}
+
+.goods {
+  width: 48%;
+  margin: 1%;
+  float: left;
+  background: #fff;
+}
+
+.goods_hover {
+  transform: scale(0.98);
+}
+
+.goods image {
+  width: 100%;
+}
+
+.bus {
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  background: rgba(120, 188, 255, 0.6);
+  border: 1px solid rgba(0, 116, 255, 0.61);
+  border-radius: 50%;
+}
+
+.bus image {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -16px;
+}
+
+.count {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  background: #ff4611;
+  padding: 0 6px;
+  border-radius: 10px;
+  color: #fff;
+  position: absolute;
+  left: 34px;
+  top: 0;
+}
+
+.scale {
+  background: rgba(120, 188, 255, 0.3);
+  border: 1px solid rgba(0, 116, 255, 0.4);
+}
+
+.scale image {
+  transform: scale(1.2);
+}
+
+.good_box {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  border-radius: 50%;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  z-index: +99;
+  border: 1px solid rgba(0, 116, 255, 0.61);
+  background: rgba(120, 188, 255, 0.2);
+}
+.good_box image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
