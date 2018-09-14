@@ -41,6 +41,8 @@ Page({
     }, 500);
   },
   touchOnGoods: function(e) {
+     // 如果good_box正在运动
+    if (!this.data.hide_good_box) return;
     this.finger = {};
     var topPoint = {};
     this.finger['x'] = e.touches["0"].clientX;
