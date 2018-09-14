@@ -24,24 +24,25 @@ Page({
     needAni: false,
     hide_good_box: true
   },
-  onLoad: function () {
+  onLoad: function() {
     var that = this;
     this.busPos = {};
-    this.busPos['x'] = app.globalData.ww - 45;
-    this.busPos['y'] = app.globalData.hh - 125;
+    this.busPos['x'] = app.globalData.ww * 0.8;
+    this.busPos['y'] = app.globalData.hh * 0.8;
   },
-  busAnimation: function () {
+  busAnimation: function() {
     that.setData({
       needAni: true
     });
-    setTimeout(function () {
+    setTimeout(function() {
       that.setData({
         needAni: false
       });
     }, 500);
   },
-  touchOnGoods: function (e) {
-    this.finger = {}; var topPoint = {};
+  touchOnGoods: function(e) {
+    this.finger = {};
+    var topPoint = {};
     this.finger['x'] = e.touches["0"].clientX;
     this.finger['y'] = e.touches["0"].clientY;
     if (this.finger['y'] < this.busPos['y']) {
@@ -49,19 +50,20 @@ Page({
     } else {
       topPoint['y'] = this.busPos['y'] - 150;
     }
-    topPoint['x'] = Math.abs(this.finger['x'] - this.busPos['x']) / 2;
+    topPoint['x'] = Math.abs(this.finger['x'] - this.busPos['x']) / 2 + this.finger['x'];
     this.linePos = app.bezier([this.finger, topPoint, this.busPos], 30);
     this.startAnimation();
   },
-  startAnimation: function () {
-    var index = 0, that = this,
+  startAnimation: function() {
+    var index = 0,
+      that = this,
       bezier_points = that.linePos['bezier_points'];
     this.setData({
       hide_good_box: false,
       bus_x: that.finger['x'],
       bus_y: that.finger['y']
     })
-    this.timer = setInterval(function () {
+    this.timer = setInterval(function() {
       index++;
       that.setData({
         bus_x: bezier_points[index]['x'],

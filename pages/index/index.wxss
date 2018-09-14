@@ -32,8 +32,8 @@ scroll-view {
   width: 48px;
   height: 48px;
   position: fixed;
-  right: 20px;
-  bottom: 100px;
+  left: 80%;
+  top: 80%;
   background: rgba(120, 188, 255, 0.6);
   border: 1px solid rgba(0, 116, 255, 0.61);
   border-radius: 50%;
