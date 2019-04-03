@@ -7,7 +7,7 @@
       </swiper-item>
     </block>
   </swiper>
-  <myToast></myToast>
+  <!-- <myToast></myToast> -->
   <scroll-view>
     <view bindtap="touchOnGoods" wx:key="keys" class="goods" hover-class="goods_hover" wx:for="{{goods_list}}">
       <image src="../../images/product_x8.png" mode="widthFix"></image>

@@ -1,0 +1,8 @@
+<cover-view class='container'>
+  <cover-view class='title'>提示</cover-view>
+  <cover-view class='content'>都会撒谎的带回家啊带回家卡萨还记得哈就是</cover-view>
+  <cover-view class='btns'>
+    <cover-view class='btn sure'>确定</cover-view>
+    <cover-view class='btn cancel'>取消</cover-view>
+  </cover-view>
+</cover-view>

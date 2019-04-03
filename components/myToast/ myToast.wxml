@@ -1,0 +1,8 @@
+<!-- myToast.wxml-->
+<cover-view class='container'>
+  <cover-view>提示</cover-view>
+  <cover-view>
+    <cover-view>确定</cover-view>
+    <cover-view>取消</cover-view>
+  </cover-view>
+</cover-view>

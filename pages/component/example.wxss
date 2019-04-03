@@ -1,0 +1,48 @@
+/*  myToast.wxss */
+.container {
+  width: 380rpx;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: #fff;
+  border-radius: 12rpx;
+  z-index: +99;
+  border: 1rpx solid #f1f1f1;
+}
+
+.btns {
+  display: flex;
+  height: 64rpx;
+  border-top: 1rpx solid #f1f1f1;
+  margin: 0 4rpx;
+}
+
+.btns .btn {
+  flex: 1;
+  text-align: center;
+  font-size: 28rpx;
+  display: block;
+  line-height: 64rpx;
+}
+
+.sure {
+  border-right: 1rpx solid #f1f1f1;
+  color: #1AAD16;
+}
+
+.content {
+  line-height: 40rpx;
+  padding: 20rpx 20rpx 38rpx;
+  font-size: 28rpx;
+  width: 100%;
+  word-break: break-all;
+}
+
+.title {
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 32rpx;
+}

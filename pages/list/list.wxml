@@ -1,0 +1,7 @@
+<!--pages/list/list.wxml-->
+<view class="container">
+  <view class="items" wx:for="{{list}}" wx:key="*this">
+    <view class="title">{{item.product_name}}</view>
+    <image mode="widthFix" src="{{item.pic_url}}"></image>
+  </view>
+</view>

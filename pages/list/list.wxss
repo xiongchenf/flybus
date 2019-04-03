@@ -1,0 +1,25 @@
+/* pages/list/list.wxss */
+
+.items {
+  display: block;
+  width: 100%;
+  margin: 10rpx 0;
+  position: relative
+}
+
+.items image {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  left: 10rpx;
+  bottom: 10rpx;
+  z-index: +1;
+  padding: 10rpx;
+  border-radius: 5rpx;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 28rpx;
+}
